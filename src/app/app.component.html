@@ -1,8 +1,13 @@
-<h2>ssasd</h2>
+<!-- <h2>ssasd</h2>
 
 <ng-template #myTemplate>
   <h3>This is ng-template</h3>
   <p>This is example</p>
 </ng-template>
 
-<div *ngTemplateOutlet="myTemplate"></div>
+<div *ngTemplateOutlet="myTemplate"></div> -->
+
+<ng-container *ngIf="toggle">
+  <p>Togle is on</p>
+</ng-container>
+<button (click)="onToggle()">TOGGLE</button>
