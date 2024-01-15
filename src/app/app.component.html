@@ -7,7 +7,10 @@
 
 <div *ngTemplateOutlet="myTemplate"></div> -->
 
-<ng-container *ngIf="toggle">
+<ng-container *ngIf="toggle; else toggleOff">
   <p>Togle is on</p>
 </ng-container>
+<ng-template #toggleOff>
+  <p>offffff</p>
+</ng-template>
 <button (click)="onToggle()">TOGGLE</button>
