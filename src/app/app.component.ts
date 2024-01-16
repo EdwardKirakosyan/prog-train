@@ -13,4 +13,10 @@ export class AppComponent {
   onToggle() {
     this.toggle = !this.toggle
   }
+
+  inputText: string = ''
+
+  OnSubmit(inp: HTMLInputElement) {
+    this.inputText = inp.value
+  }
 }
